@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-# 5. Клас Duration, інтервал часу
+# . Клас Duration, інтервал часу
 
 class Duration:
     
@@ -76,7 +76,7 @@ class Duration:
         return f"Duration({self.days}д {self.hours}год {self.minutes}хв)"
 
 
-# 1.Клас-Item Абстрактний базовий клас для книг і журналів
+# .Клас-Item Абстрактний базовий клас для книг і журналів
 
 class Item(ABC):
 
@@ -99,7 +99,7 @@ class Item(ABC):
 
 
 
-# 4. Клас- Downloadable для всього
+# . Клас- Downloadable для всього
 
 class Downloadable:
 
@@ -112,7 +112,7 @@ class Downloadable:
 
 
 
-# 2. Взаємозамінні підтипи
+# . Взаємозамінні підтипи
 
 class Book(Item):
 
@@ -149,7 +149,7 @@ class AudioBook(Downloadable, Item):
         return f"[Аудіокнига] {super().describe()}, розмір: {self.size_mb} MB"
 
 
-# 3. інкапсуляція та захист даних
+# . інкапсуляція та захист даних
 
 class Reader:
 
@@ -198,7 +198,7 @@ class Reader:
 
 
 
-# 4. Бібліотека (композиція)
+# . Бібліотека (композиція)
 
 class Library:
 
